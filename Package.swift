@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "S3Kit",
     platforms: [
-        .macOS(.v10_15)
+       .macOS(.v13),
     ],
     products: [
         .library(name: "S3Kit", targets: ["S3Kit"]),
