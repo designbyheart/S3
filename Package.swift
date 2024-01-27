@@ -10,12 +10,12 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.5.0"),
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0-alpha.3"),
-        .package(url: "https://github.com/vapor/open-crypto.git", from: "4.0.0-alpha.2"),
-        .package(url: "https://github.com/swift-server/async-http-client.git", from: "1.0.0-alpha.2"),
-        .package(url: "https://github.com/Einstore/HTTPMediaTypes.git", from: "0.0.1"),
-        .package(url: "https://github.com/Einstore/WebErrorKit.git", from: "0.0.1"),
-        .package(url: "https://github.com/LiveUI/XMLCoding.git", from: "0.1.0")
+        .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "4.77.1")),
+        .package(url: "https://github.com/vapor/open-crypto.git", .upToNextMajor(from:"4.0.0-alpha.2")),
+        .package(url: "https://github.com/swift-server/async-http-client.git", .upToNextMajor(from: "1.0.0-alpha.2")),
+        .package(url: "https://github.com/Einstore/HTTPMediaTypes.git", .upToNextMajor(from: "0.0.1")),
+        .package(url: "https://github.com/Einstore/WebErrorKit.git", .upToNextMajor(from: "0.0.1")),
+        .package(url: "https://github.com/LiveUI/XMLCoding.git", .upToNextMajor(from: "0.1.0"))
     ],
     targets: [
         .target(
