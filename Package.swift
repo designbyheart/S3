@@ -1,8 +1,11 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
     name: "S3Kit",
+    platforms: [
+        .macOS(.v10_15)
+    ],
     products: [
         .library(name: "S3Kit", targets: ["S3Kit"]),
         .library(name: "S3Signer", targets: ["S3Signer"]),
